@@ -13,10 +13,20 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+    <!-- Tipografía recomendada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS de la app -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Branding (añade después para sobrescribir variables cuando haga falta) -->
+    <link href="{{ asset('css/branding.css') }}" rel="stylesheet">
+
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
-<body>
+<body class="brand-root">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
